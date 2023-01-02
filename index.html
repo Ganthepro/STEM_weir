@@ -12,13 +12,27 @@
     <header>
         <center><h1>STEM SKN</h1></center>
         <center><h4>มาตรวัดน้ำการไหลในลำรางเปิดไหลผ่าน<br>ทำนบระยะไกลผ่านโครงข่ายอินเทอร์เน็ต</h3></center>
-        <div>
-            <a href="https://github.com/Ganthepro/STEM_weir" style="right: 0;"><img src="github.png"></a>
-            <a href="#" style="left: 0;"><img src="file.png"></a>
+        <div id="nav-bar">
+            <a href="https://github.com/Ganthepro/STEM_weir" style="right: 0;" onmouseover="movement(this,'70%','solid')" id="a-1" onmouseout="movement(this,'60%','dotted')"><img src="github.png"></a>
+            <a href="#" style="left: 0;" onmouseover="movement(this,'70%','solid')" id="a-2" onmouseout="movement(this,'60%','dotted')"><img src="file.png"></a>
         </div>
     </header>
     <div class="display">
-        
+        <div class="data" onclick="location.href='showData.html'">
+            <h1 style="font-size: 80px;position: absolute;right: 30px;">Show&nbsp;Data</h1>
+            <p style="text-align: center;position: absolute;right: 185px;bottom: 30px;font-size: 20px;">ข้อมูล</p>
+            <img src="data-analysis.png">
+        </div>
+        <div class="present" onclick="location.href='https://www.canva.com/design/DAFUFdENLGo/ttqQ-M1jdUNv8BGpO0k0Bw/edit?utm_content=DAFUFdENLGo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'">
+            <h1 style="font-size: 80px;position: absolute;right: 15px;">Presentation</h1>
+            <p style="text-align: center;position: absolute;right: 185px;bottom: 30px;font-size: 20px;">สไลด์นำเสนอ</p>
+            <img src="presentation.png">
+        </div>
+        <div class="photo">
+            <h1 style="font-size: 80px;position: absolute;right: 30px;">Photo</h1>
+            <p style="text-align: center;position: absolute;right: 100px;bottom: 30px;font-size: 20px;">รูปภาพ</p>
+            <img src="image.png">
+        </div>
     </div>
     <footer>
         <div class="member">
