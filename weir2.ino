@@ -1,5 +1,4 @@
 #include <EEPROM.h>
-//#include "soc/rtc_wdt.h"
 #include <WiFi.h>
 #include <HTTPClient.h>
 
