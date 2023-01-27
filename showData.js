@@ -11,7 +11,15 @@ function readtxt() {
         .then(text => {
             dateEle.innerText = text.split(" ")[0]
             timeEle.innerText = text.split(" ")[1].split(",")[0]
-            modeEle.innerText = text.split(" ")[1].split(",")[1]
+            if (text.split(" ")[1].split(",")[1] === "1") {
+                modeEle.innerText = "Setting Height"
+            } else if (text.split(" ")[1].split(",")[1] === "2") {
+                modeEle.innerText = "Setting Volume"
+            } else if (text.split(" ")[1].split(",")[1] === "3") {
+                modeEle.innerText = "View Host"
+            } else if (text.split(" ")[1].split(",")[1] === "0") {
+                modeEle.innerText = "Monitering"
+            }
             distanceEle.innerText = text.split(" ")[1].split(",")[2]
             flowEle.innerText = text.split(" ")[1].split(",")[3]
             volumeEle.innerText = text.split(" ")[1].split(",")[4]
