@@ -11,7 +11,7 @@ header {
   top: 0;
   height: 80px;
   background-color: white;
-  z-index: 4;
+  z-index: 1;
 }
 
 header div {
@@ -69,12 +69,8 @@ header div img {
     background-color: #ecffe3;
   }
   .display h4 {
-    opacity: 0;
+    display: none
   }
-  .stem {
-    opacity: 0;
-  }
-
   footer {
     position: relative;
     bottom: 0;
@@ -83,8 +79,10 @@ header div img {
     border-top: 4px dashed #ade0de;
   }
   #mobile {
-    visibility: hidden;
-    z-index: -2;
+    display: none
+  }
+  .display {
+    z-index: 0;
   }
   .member {
     position: absolute;
@@ -92,7 +90,6 @@ header div img {
     top: 50%;
     transform: translate(-0%, -50%);
   }
-
   .detail {
     position: absolute;
     right: 0;
@@ -119,7 +116,7 @@ header div img {
     height: 100%;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) { /* Phone */
   header h4 {
     opacity: 0;
   }
@@ -272,7 +269,6 @@ header div img {
   position: relative;
   height: 1000px;
   width: 100%;
-  z-index: 2;
 }
 
 .display #div {
@@ -325,4 +321,22 @@ header div img {
     position: absolute;
     height: 80%;width: 85px;
     right: 10%;top: 50%;transform: translate(0,-50%);
+}
+.con-but {
+  position: relative;
+  width: 100%;height: 100%;top: 0;left: 50%;
+  transform: translate(-50%,0);max-width: 325px;
+  z-index: 4;
+}
+
+.con-but a {
+  position: absolute;
+  transform: translate(0,-50%);top: 50%;
+}
+
+.con-but img {
+  width: 50px;
+}
+.con-but img:hover {
+  cursor: pointer;
 }
