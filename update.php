@@ -6,7 +6,6 @@
 	$flow=$_GET["flow"];
 	$volume=$_GET["volume"];
 	$height=$_GET["height"];
-
 	date_default_timezone_set("Asia/Bangkok");
 	$f = fopen("data.txt", "w");
 	fwrite($f, date("Y-m-d H:i:s",time()).",".$mode.",".$distance.",".$flow.",".$volume.",".$height);
