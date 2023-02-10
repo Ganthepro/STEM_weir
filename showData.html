@@ -93,16 +93,19 @@
                 </td>
                 <td>
                     <div class="con-but">
-                        <a style="left: 5px;" onclick="plus()" href=\"/+\"><img src="plus.png"></a>
-                        <a style="right: 5px;" onclick="minus()" href=\"/-\"><img src="minus.png"></a>
+                        <a style="left: 5px;" onclick="fetching('plus')"><img src="plus.png"></a>
+                        <a style="right: 5px;" onclick="fetching('minus')"><img src="minus.png"></a>
                     </div>
                     <p id="height">test3</p>
                 </td>
             </tr>
         </table>
         <div id="op">
-            <button id="op-1">WiFi</button>
-            <button id="op-2">Reset Data</button>
+            <div id="op-1">
+                <p id="op-1-p">Connection Status</p>
+                <p id="status"></p>
+            </div>
+            <button id="op-2" onclick="fetching('reset')">Reset Data</button>
         </div>
     </div>
     <footer>

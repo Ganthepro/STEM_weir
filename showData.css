@@ -69,7 +69,7 @@ header div img {
     background-color: #ecffe3;
   }
   .display h4 {
-    display: none
+    display: none;
   }
   footer {
     position: relative;
@@ -79,7 +79,7 @@ header div img {
     border-top: 4px dashed #ade0de;
   }
   #mobile {
-    display: none
+    display: none;
   }
   .display {
     z-index: 0;
@@ -116,7 +116,8 @@ header div img {
     height: 100%;
   }
 }
-@media only screen and (max-width: 750px) { /* Phone */
+@media only screen and (max-width: 750px) {
+  /* Phone */
   header h4 {
     opacity: 0;
   }
@@ -148,6 +149,7 @@ header div img {
     position: relative;
     height: 100vh;
     width: 100%;
+    z-index: 0;
     /* border: 2px solid red; */
   }
   header h1 {
@@ -309,29 +311,73 @@ header div img {
   z-index: -1;
 }
 #op {
-  position: relative;height: 100px;width: 350px;
-  left: 50%;transform: translate(-50%,0);
+  position: relative;
+  height: 100px;
+  width: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 #op-1 {
-    position: absolute;
-    height: 80%;width: 85px;
-    left: 10%;top: 50%;transform: translate(0,-50%);
+  position: absolute;
+  height: 80%;
+  width: 170px;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: 4px solid;
+  border-radius: 20px;
+  transition: border-color 1s;
 }
+
+#status {
+  font-size: larger;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, 0);
+  transition: opacity 0.5s, color 1s;
+}
+#op-1-p {
+  font-size: medium;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 0);
+}
+
+#op-1 p {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+
 #op-2 {
-    position: absolute;
-    height: 80%;width: 85px;
-    right: 10%;top: 50%;transform: translate(0,-50%);
+  position: absolute;
+  font-size: medium;
+  height: 80%;
+  width: 170px;
+  right: 0;
+  border-radius: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
+button:hover {
+  cursor: pointer;
+}
+
 .con-but {
   position: relative;
-  width: 100%;height: 100%;top: 0;left: 50%;
-  transform: translate(-50%,0);max-width: 325px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 325px;
   z-index: 4;
 }
 
 .con-but a {
   position: absolute;
-  transform: translate(0,-50%);top: 50%;
+  transform: translate(0, -50%);
+  top: 50%;
 }
 
 .con-but img {
