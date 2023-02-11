@@ -7,7 +7,7 @@ const volumeEle = document.getElementById("volume");
 const heightEle = document.getElementById("height");
 const wifiEle = document.getElementById("status");
 let wifiStatus;
-const host_ip = window.location.hostname;
+const host_ip = "10.10.10.7";
 let numCheck;
 let counter = 0;
 
