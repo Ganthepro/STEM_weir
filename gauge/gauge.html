@@ -90,8 +90,6 @@
         const elem = document.getElementById("needle");
         var xpos = 0;
         var sign = 1;
-
-        mi_km.innerHTML = "value";
         let value = 0;
         function interval() {
             if (value > 140) sign = 0;
@@ -104,10 +102,11 @@
             else {
                 xpos = value + 100;
             }
+            mi_km.innerHTML = "value";
             elem.style.rotate = xpos + "deg";
             numbers.innerHTML = value;
         }
-        setInterval(interval, 250);
+        setInterval(interval, 125);
     </script>
 </body>
 
